@@ -7,17 +7,70 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
 		/>
 		<title>ClassIQ — EdTech Web Design</title>
 		<script src="/src/main.js" type="module"></script>
 	</head>
+
 	<body>
 		<div class="ap-site">
-			<div class="ap-site-header">Header</div>
+			<header class="ap-site-header">
+				<nav class="
+					ap-navbar ap-container flex items-center justify-between gap-5 pt-5 flex-wrap
+					lg:justify-start lg:gap-16 lg:pt-8
+				">
+					<a href="/" class="ap-logo shrink-0">
+						<img
+							class="h-10 w-auto lg:h-12"
+							src="/src/img/logo.svg"
+							alt="ClassIQ Logo"
+						/>
+
+						<span class="sr-only">ClassIQ Logo</span>
+					</a>
+
+					<ul class="ap-menu ap-menu--primary hidden lg:flex lg:gap-8">
+						<li class="ap-menu__item">
+							<a
+								class="ap-menu__link text-lg text-ap-slate-500 leading-none"
+								href="/courses"
+							>
+								Courses
+							</a>
+						</li>
+					</ul>
+
+					<div class="ap-account hidden lg:flex lg:gap-7.5 lg:ml-auto">
+						<a
+							class="ap-account__link ap-account__link--login rounded-lg py-3 px-6 bg-black text-white font-inter text-lg leading-none font-semibold"
+							href="/login"
+						>
+							Login
+						</a>
+
+						<a
+							class="ap-account__link ap-account__link--sign-up rounded-lg py-3 px-6 bg-black text-white font-inter text-lg leading-none font-semibold"
+							href="/signup"
+						>
+							SignUp
+						</a>
+					</div>
+
+					<button
+						class="ap-hamburger mask-image-sidekick mask-image-hamburger before:h-6 before:w-6 before:bg-black lg:hidden"
+						type="button"
+						aria-label="Open Menu"
+					>
+						<span class="sr-only">Open Menu</span>
+					</button>
+				</nav>
+			</header>
+
 			<div class="ap-site-middle">Middle</div>
-			<div class="ap-site-footer">Footer</div>
+
+			<footer class="ap-site-footer">Footer</footer>
 		</div>
 	</body>
 </html>
