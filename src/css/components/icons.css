@@ -1,0 +1,19 @@
+/**
+ * Icons.
+ */
+
+.mask-image-sidekick {
+	position: relative;
+}
+
+.mask-image-sidekick::before {
+	content: '';
+	display: block;
+	mask-position: center center;
+	mask-repeat: no-repeat;
+	mask-size: contain;
+}
+
+.mask-image-close::before {
+	mask-image: url('/src/img/icons/close.svg');
+}

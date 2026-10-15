@@ -1,0 +1,48 @@
+/**
+ * Container.
+ */
+
+:root {
+	--ap-container-width: 100%;
+	--ap-container-gap: 20px;
+}
+
+/* MD */
+@media (min-width: 768px) {
+	:root {
+		--ap-container-width: 704px;
+		--ap-container-gap: 32px;
+	}
+}
+
+/* LG */
+@media (min-width: 1280px) {
+	:root {
+		--ap-container-width: 960px;
+	}
+}
+
+/* XL */
+@media (min-width: 1366px) {
+	:root {
+		--ap-container-width: 1168px;
+		--ap-container-gap: 40px;
+	}
+}
+
+/* 2XL */
+@media (min-width: 1640px) {
+	:root {
+		--ap-container-width: 1400px;
+	}
+}
+
+.ap-container {
+	margin-inline: auto;
+	max-width: var(--ap-container-width);
+	width: calc(100% - (var(--ap-container-gap) * 2));
+
+	.ap-container {
+		width: 100%;
+	}
+}

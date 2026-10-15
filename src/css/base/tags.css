@@ -1,0 +1,16 @@
+/**
+ * Tags.
+ */
+
+body {
+	@apply bg-ap-neutral-100 font-poppins leading-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply leading-tight text-black font-poppins;
+}
