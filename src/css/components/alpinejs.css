@@ -1,0 +1,10 @@
+/* -----------------------------------------------------------------------------
+ * Alpine.js.
+ * https://alpinejs.dev/
+ * -------------------------------------------------------------------------- */
+/* x-cloak: https://alpinejs.dev/directives/cloak
+ * Hide elements it's attached to until Alpine is fully loaded on the page.
+ * -------------------------------------------------------------------------- */
+[x-cloak] {
+	@apply !hidden;
+}

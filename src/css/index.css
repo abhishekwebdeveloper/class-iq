@@ -11,3 +11,4 @@
 /* Components. */
 @import './components/container.css' layer(components);
 @import './components/icons.css' layer(components);
+@import './components/alpinejs.css' layer(components);
