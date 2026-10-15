@@ -1,1 +1,13 @@
-@import './tailwind.css';
+/**
+ * Theme Core CSS Index.
+ */
+
+@layer theme, base, components, pages, utilities;
+
+/* Base. */
+@import './base/tailwind.css' layer(base);
+@import './base/tags.css' layer(base);
+
+/* Components. */
+@import './components/container.css' layer(components);
+@import './components/icons.css' layer(components);

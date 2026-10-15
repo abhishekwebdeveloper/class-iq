@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/src/img/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Login</title>
+		<script src="/src/main.js" type="module"></script>
+	</head>
+
+	<body>
+		<div class="ap-site">
+			<header class="ap-site-header">
+				<nav
+					class="ap-navbar ap-container flex items-center justify-between gap-5 pt-5 flex-wrap lg:justify-start lg:gap-16 lg:pt-8"
+				>
+					<a href="/" class="ap-logo shrink-0">
+						<img
+							class="h-10 w-auto lg:h-12"
+							src="/src/img/logo.svg"
+							alt="ClassIQ Logo"
+						/>
+
+						<span class="sr-only">ClassIQ Logo</span>
+					</a>
+
+					<ul class="ap-menu ap-menu--primary hidden lg:flex lg:gap-8">
+						<li class="ap-menu__item">
+							<a
+								class="ap-menu__link text-lg text-ap-slate-500 leading-none"
+								href="/courses"
+							>
+								Courses
+							</a>
+						</li>
+					</ul>
+
+					<div class="ap-account hidden lg:flex lg:gap-7.5 lg:ml-auto">
+						<a
+							class="ap-account__link ap-account__link--login rounded-lg py-3 px-6 bg-black text-white font-inter text-lg leading-none font-semibold"
+							href="/login"
+						>
+							Login
+						</a>
+
+						<a
+							class="ap-account__link ap-account__link--sign-up rounded-lg py-3 px-6 bg-black text-white font-inter text-lg leading-none font-semibold"
+							href="/signup"
+						>
+							SignUp
+						</a>
+					</div>
+
+					<button
+						class="ap-hamburger mask-image-sidekick mask-image-hamburger before:h-6 before:w-6 before:bg-black lg:hidden"
+						type="button"
+						aria-label="Open Menu"
+					>
+						<span class="sr-only">Open Menu</span>
+					</button>
+				</nav>
+			</header>
+
+			<div class="ap-site-middle">
+				<div class="ap-container py-28">
+					<div class="ap-form__wrapper bg-ap-slate-400 max-w-100 mx-auto w-full px-9 pb-9 pt-11">
+						<h1
+							class="ap-form__title font-semibold text-2xl leading-none text-ap-slate-900 text-center mb-9"
+						>
+							Login
+						</h1>
+
+						<form
+							class="ap-form ap-form--login space-y-5"
+							action="#"
+						>
+							<input
+								class="ap-form__input ap-form__input--email w-full border-2 border-ap-slate-300 rounded-lg py-2 px-4 text-lg font-semibold leading-none focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+								type="email"
+								name="email"
+								placeholder="Enter Your Email"
+								required
+							/>
+
+							<input
+								class="ap-form__input ap-form__input--password w-full border-2 border-ap-slate-300 rounded-lg py-2 px-4 text-lg font-semibold leading-none focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+								type="password"
+								name="password"
+								placeholder="Enter Your Password"
+								required
+							/>
+
+							<button
+								class="ap-form__submit cursor-pointer rounded-lg mt-3 py-3 px-6 bg-ap-lime-400 text-black font-inter text-lg leading-none font-semibold w-full"
+								type="submit"
+							>
+								Login
+							</button>
+						</form>
+
+						<p class="ap-form__link text-center text-black font-semibold font-inter leading-none mt-10">
+							Don’t have an account? <a href="/signup" class="underline">SignUp</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<footer class="ap-site-footer">Footer</footer>
+		</div>
+	</body>
+</html>
