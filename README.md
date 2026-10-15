@@ -30,7 +30,6 @@ To open the built site without a server, run `npm run build` and open `dist/inde
 | --- | --- |
 | [Vite](https://vite.dev/) | Dev server and production bundler (`vite.config.ts`) |
 | [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first styling, configured in CSS with `@theme` (no `tailwind.config.js`) |
-| [Alpine.js](https://alpinejs.dev/) | Light interactivity (`src/js/alpine.js`) |
 | Google Fonts | Poppins and Inter |
 
 ## Project structure
@@ -43,7 +42,6 @@ src/
     index.css      CSS entry point
   img/             SVG icons and images
   js/              Page scripts
-  alpine.js
   main.js          JS entry point
 index.html
 login.html
