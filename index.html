@@ -370,12 +370,12 @@
 
 			<footer class="ap-site-footer mt-24 pb-8 lg:mt-36 lg:pb-10">
 				<div class="ap-container">
-					<div
-						class="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-16"
-					>
-						<!-- Brand + subscribe -->
+					<div class="
+						ap-site-footer__main flex flex-col gap-10
+						lg:flex-row lg:justify-between lg:gap-16
+					">
 						<div class="ap-footer__brand w-full max-w-md xl:max-w-xl">
-							<a href="/" class="block w-fit" aria-label="ClassIQ home">
+							<a href="/" class="ap-logo inline-block" aria-label="ClassIQ Logo">
 								<img
 									src="/src/img/logo.svg"
 									alt="ClassIQ"
@@ -383,13 +383,12 @@
 								/>
 							</a>
 
-							<h4
-								class="mt-5 text-base font-semibold leading-none text-ap-gray-700 xl:mt-6 xl:text-lg"
-							>
+							<h4 class="ap-title mt-5 text-base font-semibold leading-none text-ap-gray-700 xl:mt-6 xl:text-lg">
 								Subscribe
 							</h4>
+
 							<p
-								class="mt-2 text-xs leading-normal text-ap-gray-600/60 xl:text-sm"
+								class="ap-description mt-2 text-xs leading-normal text-ap-gray-600/60 xl:text-sm"
 							>
 								Subscribe for the latest courses, tips, and updates. Join our
 								learning community today!
@@ -397,9 +396,10 @@
 
 							<form
 								action="#"
-								class="mt-4 flex items-center gap-2 rounded-lg bg-white p-1.5 xl:mt-5 xl:p-2"
+								class="ap-newsletter mt-4 flex items-center gap-2 rounded-lg bg-white p-1.5 xl:mt-5 xl:p-2"
 							>
 								<label for="footer-email" class="sr-only">Email address</label>
+
 								<input
 									id="footer-email"
 									type="email"
@@ -407,104 +407,120 @@
 									placeholder="Enter your email"
 									class="min-w-0 flex-1 bg-transparent px-3 py-2 text-base text-ap-gray-700 placeholder:text-ap-gray-600/50 focus-visible:outline-none xl:px-4 xl:text-xl"
 								/>
+
 								<button
+									class="
+										ap-button ap-button--newsletter-submit bg-ap-lime-400 text-ap-slate-500 shrink-0 cursor-pointer rounded-lg px-4 py-2.5 text-sm font-semibold leading-none
+										xl:px-6 xl:py-3.5 xl:text-base
+									"
 									type="submit"
-									class="bg-ap-lime-400 text-ap-slate-500 shrink-0 cursor-pointer rounded-lg px-4 py-2.5 text-sm font-semibold leading-none transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ap-slate-500 xl:px-6 xl:py-3.5 xl:text-base"
 								>
 									Subscribe
 								</button>
 							</form>
 						</div>
 
-						<div
-							class="ap-footer__links grid grid-cols-2 gap-x-8 gap-y-8 sm:gap-x-16 lg:gap-x-20 xl:gap-x-32"
-						>
-							<nav aria-labelledby="footer-business">
-								<h4
-									id="footer-business"
-									class="text-base font-semibold leading-none text-ap-gray-700 xl:text-xl"
-								>
+						<div class="
+							ap-site-footer__links grid grid-cols-2 gap-y-8 gap-x-16
+							md:gap-x-8 lg:gap-x-20
+							xl:gap-x-32
+						">
+							<nav class="ap-site-footer__nav">
+								<h4 class="text-base font-semibold leading-none text-ap-gray-700 xl:text-xl">
 									ClassIQ Business
 								</h4>
-								<ul class="mt-4 flex flex-col gap-3 xl:mt-5 xl:gap-4">
-									<li>
+
+								<ul class="ap-menus ap-menus--footer-col-1 mt-4 flex flex-col gap-3 xl:mt-5 xl:gap-4">
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Teach on ClassIQ</a
+											href="#"
 										>
+											Teach on ClassIQ
+										</a>
 									</li>
-									<li>
+
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Teaching Tools</a
+											href="#"
 										>
+											Teaching Tools
+										</a>
 									</li>
-									<li>
+
+
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>ClassIQ app</a
+											href="#"
 										>
+											ClassIQ app
+										</a>
 									</li>
-									<li>
+
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Contact us</a
+											href="#"
 										>
+											Contact us
+										</a>
 									</li>
 								</ul>
 							</nav>
 
-							<nav aria-labelledby="footer-careers">
-								<h4
-									id="footer-careers"
-									class="text-base font-semibold leading-none text-ap-gray-700 xl:text-xl"
-								>
+							<nav class="ap-site-footer__nav">
+								<h4 class="text-base font-semibold leading-none text-ap-gray-700 xl:text-xl">
 									Careers
 								</h4>
-								<ul class="mt-4 flex flex-col gap-3 xl:mt-5 xl:gap-4">
-									<li>
+
+								<ul class="ap-menus ap-menus--footer-col-2 mt-4 flex flex-col gap-3 xl:mt-5 xl:gap-4">
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Blog</a
+											href="#"
 										>
+											Blog
+										</a>
 									</li>
-									<li>
+
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Affiliate</a
+											href="#"
 										>
+											Affiliate
+										</a>
 									</li>
-									<li>
+
+									<li class="ap-menu__list-item">
 										<a
-											href="#"
 											class="text-sm text-ap-gray-600 hover:underline xl:text-lg"
-											>Support</a
+											href="#"
 										>
+											Support
+										</a>
 									</li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 
-					<div
-						class="mt-10 flex flex-col-reverse items-start gap-6 border-t border-ap-gray-600/10 pt-8 sm:flex-row sm:items-center sm:justify-between lg:mt-14 xl:mt-16 xl:pt-10"
-					>
+					<div class="
+						ap-footnote mt-10 flex flex-col items-start gap-6 border-t border-[#EAEDEB] pt-8
+						lg:flex-row lg:items-center lg:justify-between lg:mt-14 xl:mt-16 xl:pt-10
+					">
 						<p class="text-sm text-ap-gray-600 xl:text-lg">
 							&copy; 2026 ClassIQ. All rights reserved.
 						</p>
 
-						<ul class="flex items-center gap-3">
+						<ul class="ap-social-profiles flex items-center gap-3 order-first lg:order-last">
 							<li>
 								<a
 									href="#"
 									aria-label="Instagram"
-									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md transition hover:brightness-95 xl:size-9"
+									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md xl:size-9"
 								>
 									<svg
 										class="size-4 xl:size-4.5"
@@ -522,11 +538,12 @@
 									</svg>
 								</a>
 							</li>
+
 							<li>
 								<a
 									href="#"
 									aria-label="X"
-									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md transition hover:brightness-95 xl:size-9"
+									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md xl:size-9"
 								>
 									<svg
 										class="size-4 xl:size-4.5"
@@ -540,11 +557,12 @@
 									</svg>
 								</a>
 							</li>
+
 							<li>
 								<a
 									href="#"
 									aria-label="LinkedIn"
-									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md transition hover:brightness-95 xl:size-9"
+									class="bg-ap-lime-400 text-ap-slate-500 flex size-8 items-center justify-center rounded-md xl:size-9"
 								>
 									<svg
 										class="size-4 xl:size-4.5"
